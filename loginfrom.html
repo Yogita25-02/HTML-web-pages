@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#mandatory{
+			color: red;
+			font-size: 8px;
+		}
+	</style>
+</head>
+<body>
+ <H2> Job Application Form</H2>
+<form>
+	<label>Username:</label>
+	<input type="text" name="Username" required><BR></BR>
+	<label>Password:</label>
+	<input type="Password" name="Password"><br></br>
+	 Age: <input type="number" name="age"><br></br>
+	 Resume: <input type="file" name="Resume"><br></br>
+	 Birthdate:<input type="date" name=""><br></br>
+     Gender :
+     <input type="radio" name="gender"> male
+     <input type="radio" name="gender">female
+     <br></br>
+
+    <label for="phone">Enter your phone number:</label>
+
+    <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+    <small>Enter number 123-123-1234 in this format</small>
+
+    <br></br>
+
+    Enter email :<input type="email" required>
+    <small id="mandatory">* mandatory</small> <br></br>
+
+     Applying for :
+     <select>
+
+         <option>Java Developer</option>
+     	<option>Python Devp</option>
+     	<option>Ruby developer</option>
+     	<option>Web Developer</option>
+     </select>
+     <br></br>
+     Do you have your own vehicle?
+     <input type="checkbox" name="vehiclestatus">Yes
+     <input type="checkbox" name="">No <br></br>
+     <input type="button" value="Apply">
+     <input type="reset" value="RESET">
+</form>
+
+</body>
+</html>
